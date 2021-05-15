@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #333;
+  --secudary-color: #00ffff;
+  --background-about: #242424;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  background-color: var(--primary-color) !important;
+}
+canvas.particles-js-canvas-el {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -100;
+  margin: 0px;
+}
+/* NavBar */
+.nav__container,
+.navbar-brand {
+  font-size: 1.345rem;
+}
+.nav__container,
+.navbar-nav li {
+  margin: 0px 0.5rem;
+}
+.nav__container,
+.navbar-nav li a {
+  color: #fff !important;
+  font-size: 1.3rem;
+}
+.nav__container,
+.navbar-nav li a:hover {
+  color: var(--secudary-color) !important;
+}
+
+/* Hero */
+
+.hero,
+.row {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.hero,
+.row h1,
+h2,
+h3,
+p {
+  color: #fff;
+}
+.hero .row h3 {
+  font-size: 1.1875rem;
+  font-weight: 300;
+  margin-bottom: 1.0625rem;
+}
+.hero .row h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.hero .row h2 {
+  font-size: 1.25rem;
+  font-weight: 100;
+  margin: 8px 0px;
+}
+.hero .row p {
+  font-size: 0.8125rem;
+  margin-top: 0.8125rem;
+  line-height: 25px;
+  color: #bbbbbb;
+}
+.hero .row button {
+  width: 7.75rem;
+  border-radius: 0.75rem;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+}
+.hero .row button:hover {
+  animation: swing;
+  animation-duration: 0.5s;
+}
+.hero .row img {
+  width: 80%;
+  border-radius: 50px;
+}
+@media (max-width: 763px) and (min-width: 300px) {
+  .hero .row h1 {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+  .hero .row h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .hero .row p {
+    font-size: 1em;
+    text-align: center;
+  }
+  .hero .row h3 {
+    font-size: 0.8125rem;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .hero .row h3::after {
+    width: 0px;
+  }
+  .hero .btn_container {
+    justify-content: center;
+    text-align: center;
+  }
+  .hero img {
+    width: 50%;
+  }
+}
+/* about */
+.about {
+  background-color: var(--background-about);
+}
+#heading {
+  font-weight: 600;
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+.about .contato_h5 {
+  margin-top: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.about #info_email {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: #fff;
+  word-spacing: 6px;
+}
+.about .contact {
+  margin-top: 1rem;
+}
+.about .contact h5 {
+  color: white;
+  font-size: 1rem;
+}
+.about .about_me_right {
+  margin-top: 22px;
+  border: none;
+  color: white;
+}
+.about .about_me_right table {
+  color: white;
+}
+@media (max-width: 763px) and (min-width: 300px) {
+  .about #heading {
+    font-size: 1.5625rem;
+    text-align: center;
+  }
+  .about .about_me_right #text {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}
+/* skills  */
+.myskill_right .each_skill {
+  margin: 25px 0px;
+}
+.myskill_right .each_skill span {
+  color: white;
+  font-size: 0.875rem;
+}
