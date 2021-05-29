@@ -177,3 +177,33 @@ p {
   color: white;
   font-size: 0.875rem;
 }
+/* Projetos */
+.projetos{
+  background-color: #202020;
+  padding: 170px 0;
+}
+.projetos .nav-tabs{
+  border: none;
+  width: 30%;
+  text-align: center;
+}
+.projetos .nav-tabs .nav-link.active{
+  border:none;
+  color: white;
+  border-bottom: 2x solid #00ffff !important;
+  background: transparent !important;
+}
+.projetos .nav-tabs .nav-link.active:hover{
+  border-bottom:  2px solid var(--secudary-color);
+}
+.projetos .nav-tabs .nav-item.show .nav-link{
+  font-weight: 200;
+  font-size: 14px;
+  background: transparent;
+}
+.projetos .nav-tabs .nav-link:hover{
+  border: none;
+}
+.projetos .tab-content .card img{
+  border: 2px solid var(--secudary-color);
+}
